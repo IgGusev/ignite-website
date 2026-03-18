@@ -14,11 +14,6 @@
         {% if site.attrs.section == 'extensions' %}
         <div id="search-button"></div>
         {% else %}
-        <select id="product-selector">
-            <option value="/docs/ignite2/latest" {% if major_version == '2' %}selected{% endif %}>Ignite 2</option>
-            <option value="/docs/ignite3/latest"{% if major_version == '3' %}selected{% endif %}>Ignite 3</option>
-        </select>
-
         <select id="version-selector">
             <option value="{{site.attrs.version}}">{{site.attrs.version}}</option>
         </select>
@@ -61,7 +56,7 @@
                 </li></ul>
         </nav>
 
-
+        <a href="https://ignite.apache.org/docs/ignite3/latest/" class="ignite3-link" title="Ignite 3 Documentation">Ignite 3</a>
 
         <div id="search-button"></div>
 
